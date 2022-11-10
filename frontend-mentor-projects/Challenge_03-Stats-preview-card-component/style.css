@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --main-bg: hsl(233, 47%, 7%);
+    --card-bg: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --white: #fff;
+    --trans-white: hsla(0, 0%, 100%, 0.75);
+    
+    --font-lexa: 'Lexend Deca', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-wt-reg: 400;
+    --font-wt-bold: 700;
+    --font-sm: 1rem;
+    --font-med: 1.1rem;
+    --font-lg: 2.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--trans-white);
+    font-family: var(--font-inter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    width: 72rem;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+}
+
+.details {
+    width: 50%;
+    padding: 3.5rem;
+    margin-right: 1.5rem;
+}
+
+.details h1 {
+    color: var(--white);
+    font-size: var(--font-lg);
+    font-weight: var(--font-wt-bold);
+    margin: 1.75rem 0;
+}
+
+.details span {
+    color: var(--accent);
+}
+
+.details p {
+    width: 100%;
+   margin-top: 1rem;
+   color: var(--trans-white);
+   font-size: var(--font-med);
+   line-height: 1.8;
+}
+
+.metrics {
+    display: flex;
+    margin-top: 3rem;
+    padding-bottom: 0;
+}
+
+.records {
+    flex: 1.5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat {
+    color: var(--white);
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--font-lexa);
+    padding-top: .4rem;
+    letter-spacing: .16rem;
+}
+
+.graphic {
+    width: 50%;
+    height: 100%;
+    background-color: var(--accent);
+    border-radius: 0 12px 12px 0;
+}
+
+.graphic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity:  0.5;
+    border-radius: 0 12px 12px 0;
+}
+
+/* Author */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
